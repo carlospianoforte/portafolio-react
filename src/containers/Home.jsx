@@ -6,12 +6,15 @@ import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 import '../assets/styles/App.scss';
 import Header from '../components/Header';
+import Header1 from '../components/Header1';
 
 const Home = (props) => {
   const { myList, trends, originals, search } = props;
   return (
     <>
       <Header />
+      <Header1 />
+
       <Search isHome />
 
       {search.length > 0 &&

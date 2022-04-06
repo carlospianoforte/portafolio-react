@@ -5,6 +5,8 @@ import { createStore, compose } from 'redux';
 import reducer from './reducers';
 import App from './routes/App';
 
+import * as bootstrap from 'bootstrap';
+
 const initialState = {
   'user': {},
   'playing': {},
