@@ -5,15 +5,21 @@ import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 import '../assets/styles/App.scss';
-import Header from '../components/Header';
-import Header1 from '../components/Header1';
+/* import Header from '../components/Header';
+ */import Header1 from '../components/Header1';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Skills from '../components/Skills';
 
 const Home = (props) => {
   const { myList, trends, originals, search } = props;
   return (
     <>
-      <Header />
-      <Header1 />
+{/*       <Header />
+ */}      <Header1 />
+      <Hero />
+      <About />
+      <Skills/>
 
       <Search isHome />
 

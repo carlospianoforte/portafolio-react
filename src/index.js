@@ -4,8 +4,10 @@ import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import reducer from './reducers';
 import App from './routes/App';
-
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as bootstrap from 'bootstrap';
+
 
 const initialState = {
   'user': {},

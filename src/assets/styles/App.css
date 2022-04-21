@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
+@media only screen and (max-width: 600px) {
+  .main__description--title {
+    font-size: 30px;
+  }
+  .footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  /* background: $main-color; */
+  /*   background: #0F2027;  
+  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #212529);
+  background: linear-gradient(to top, #2C5364, #203A43, #212529);  */
+  background: #4B79A1;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#283E51), to(#4B79A1));
+  background: linear-gradient(to bottom, #283E51, #4B79A1);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=App.css.map */

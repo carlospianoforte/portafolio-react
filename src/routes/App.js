@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../containers/Home';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
@@ -9,20 +9,21 @@ import Layout from '../components/Layout';
 import ModalVideo from '../containers/ModalVideo';
 
 const App = () => (
-  <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/register' component={Register} />
-        <Route exact path='/player/:id' component={ModalVideo} />
-        <Route component={NotFound} />
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/login' element={<Login />} />
+          <Route exact path='/register' element={<Register />} />
+          <Route exact path='/player/:id' element={<ModalVideo />} />
+          <Route element={<NotFound />} />
 
-      </Switch>
+        </Routes>
 
-    </Layout>
+      </Layout>
 
-  </BrowserRouter>
-);
+    </BrowserRouter>
+  );
+
 
 export default App;

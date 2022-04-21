@@ -1,13 +1,16 @@
 import React from 'react';
 import '../assets/styles/components/Header1.css';
+import logo from '../assets/static/logo3.png';
 
-const Header1 = () => {
+const Header1 = (props) => {
 
   return (
 
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
       <div className='container'>
-        <a className='navbar-brand' href='#'>CarlosPianoForte</a>
+        <a className='navbar-brand'href='#'>
+          <img className='header-logo' src={logo} alt="logo" />
+        </a>
         <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbar' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
           <span className='navbar-toggler-icon' />
         </button>
