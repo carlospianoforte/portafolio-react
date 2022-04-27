@@ -5,6 +5,11 @@
     margin-top: 1rem;
 }
 
+.containerxx{
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
 /* .skills-title{
     display: flex;
     flex-direction: column;
@@ -12,26 +17,68 @@
 } */
 
 .skills-title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    position: relative;
-    color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  color: white;
 }
 
 
-  .skills{
-    margin-top: 3rem;
-  }
+.skills{
+  margin-top: 3rem;
+}
 
-  .skills p{
-    color: white;
-  }
+.skills p{
+  color: white;
+}
 
 
-  .img-fluid{
-    width: 250px;
-    height: auto;
-    object-fit: cover;
-  }
+.img-fluid{
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.Skills__container-barImg{
+  color:white;
+  margin: 0px;
+  width: 100px;
+  height: 80px;
+}
+
+
+.Skills__container-barImg2{
+  color:white;
+  margin: 0px;
+  width: 50px;
+  height: 80px;
+}
+
+.Skills__container-barImg:hover,
+.Skills__container-barImg2:hover,
+.Skills__container-barImg3:hover{
+/*     -moz-animation: spinHorizontal 1.2s linear;
+    -o-animation: spinHorizontal 1.2s normal linear;    
+    -webkit-animation: spinHorizontal 1.2s normal linear; */
+    animation: palpitar 0.8s normal linear;
+    animation-iteration-count: 2;
+}
+
+/* #reactLogo:hover{
+    color: #00D8FF ;
+} */
+
+@keyframes palpitar {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(0deg) scale(1.25); }
+  50% { transform: rotate(0deg) scale(1.5); }
+  75% { transform: rotate(0deg) scale(1.25); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+/* @keyframes spinHorizontal {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+} */

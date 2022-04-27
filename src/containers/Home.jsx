@@ -10,6 +10,7 @@ import '../assets/styles/App.scss';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import Portfolio from '../components/Portfolio';
 
 const Home = (props) => {
   const { myList, trends, originals, search } = props;
@@ -20,6 +21,7 @@ const Home = (props) => {
       <Hero />
       <About />
       <Skills/>
+      <Portfolio />
 
       <Search isHome />
 
